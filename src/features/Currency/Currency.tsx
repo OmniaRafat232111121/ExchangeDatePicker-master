@@ -37,25 +37,26 @@ const CurrencyTable: FC<CurrencyTableProps> = ({
   return (
     <div className='currency__page'>
       <div className='currency__page--date'>
-        {/* SHOW TODAY DATE */}
+        {/*add Day*/}
         <p className='currency__page--date-today'>
-          <span className='today'>Today: </span>
-          {moment(new Date()).format('DD MMM YYYY')}
+          <span className='today'>Today:- </span>
+          {moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}
         </p>
 
-        {/* SHOW THE RANGE SELECTED */}
-        <div className='currency__page--date-range'>
-          <p className='currency__page--date-range-start'>
-            {moment(data.start_date).format('DD/MM/YYYY')}
+        {/* Range of start-end Day */}
+        <div className='currency_range'>
+       
+         <p className='currency__page--date-range-start'>
+            {moment(data.start_date).format('MMMM Do YYYY, h:mm:ss a')}
           </p>
           <span className='range-hyphen'>-</span>
           <p className='currency__page--date-range-end'>
-            {moment(data.end_date).format('DD/MM/YYYY')}
+            {moment(data.end_date).format('MMMM Do YYYY, h:mm:ss a')}
           </p>
+         
         </div>
       </div>
 
-      {/* SHOW TABLE OF RESULTS */}
       <table className='currency__page--table'>
         <thead>
           <tr className='table'>
@@ -65,15 +66,15 @@ const CurrencyTable: FC<CurrencyTableProps> = ({
           </tr>
         </thead>
 
-        {/* IN A SPECIFIC DATE-FORMAT AND WITH A ROUNDED CURRENCY-EXCHANGE TO ONLY 2 DECIMALS */}
+        
         <tbody>
-          {Object.keys(data.rates).map(el => {
-            if (Object.keys(data.rates[el]).length !== 0) {
+          {Object.keys(data.rates).map(item => {
+            if (Object.keys(data.rates[item]).length !== 0) {
               return (
-                <tr key={el}>
-                  <td>{moment(el).format('DD/MM/YYYY')}</td>
-                  <td>{data.rates[el].EGP.toFixed(2)}</td>
-                  <td>{data.rates[el].CAD.toFixed(2)}</td>
+                <tr key={item}>
+                  <td>{moment(item).format('DD/MM/YYYY')}</td>
+                  <td>{data.rates[item].EGP.toFixed(3)}</td>
+                  <td>{data.rates[item].CAD.toFixed(3)}</td>
                 </tr>
               );
             } else {
