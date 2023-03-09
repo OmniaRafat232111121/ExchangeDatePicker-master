@@ -1,0 +1,119 @@
+.currency__page {
+    width: 100%;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+   }
+    100% {
+        opacity: 1;
+   }
+}
+
+.currency__page--date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    margin: 4rem auto;
+    color: var(--secondaryColor);
+}
+.currency__page--date-today {
+    border-bottom: solid 1px rgb(0, 0, 0);
+    font-size: 1.7rem;
+}
+.currency__page--date-today .today {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.currency_range {
+    margin-top: 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 3rem;
+    border: solid 4px rgb(53, 53, 53);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.currency__page--date .range {
+    display: block;
+}
+.currency__page--table {
+   
+    width: 60%;
+    margin: 3rem auto;
+    color:var(--secondaryColor);
+    box-shadow:rgb(101, 100, 100);
+    border-radius: 5px;
+}
+.currency__page--table .table th{
+    text-align: center;
+}
+.currency__page--table td, .currency__page--table th {
+    border: 2px solid rgb(29, 28, 28);
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.currency__page--table th {
+    font-size: 1rem;
+   color:#fff;
+   width:35%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.currency__page--table tr:nth-child(even) {
+    background-color: var(--tertiary-color);
+}
+.currency__page--table tr:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.currency__page--table tr:hover {
+    background-color: gray;
+}
+.currency__page--table th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: left;
+    background-color:#61295f;
+}
+@media screen and (max-width: 900px) {
+    .currency__page--table {
+        width: 80%;
+   }
+}
+@media screen and (max-width: 600px) {
+    .currency__page--table {
+        width: 100%;
+   }
+}
+.currency__page--restart-btn {
+    font-size: 4rem;
+   
+    width: 7rem;
+    height: 7rem;
+    z-index: 10;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    border-radius: 20px;
+    background-color: #61295f;
+    color:#fff;
+
+}
+@media screen and (max-width: 600px) {
+    .currency__page--restart-btn {
+        font-size: 4rem;
+        width: 5rem;
+        height: 5rem;
+        right: 1rem;
+        top: 8rem;
+   }
+}
