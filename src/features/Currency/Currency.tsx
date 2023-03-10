@@ -44,7 +44,7 @@ const CurrencyTable: FC<CurrencyTableProps> = ({
         </p>
 
         {/* Range of start-end Day */}
-        
+
         <div className='currency_range'>
        
          <p className='currency__page--date-range-start'>
@@ -85,9 +85,9 @@ const CurrencyTable: FC<CurrencyTableProps> = ({
         </tbody>
       </table>
 
-      {/* ICON FOR THE RESTART BUTTON */}
+      {/* Add Button to forward Home Calender to get Back Home without any CHange*/}
       <button
-        className='float-btn currency__page--restart-btn'
+        className='currency-btn-refersh'
         onClick={handleRestart}
     >
         <MdRestartAlt />
