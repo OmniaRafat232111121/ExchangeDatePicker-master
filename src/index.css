@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
 }
+html{
+	overflow: hidden;
+}
 
 :root{
   --mainColor: #61295f;
@@ -13,4 +16,9 @@
 	--secondaryColor: #000;
 	--textColor: #eee;
 	--dark-shadow: 0px 4px 10px #aeaeae9c;
+}
+
+a{
+	list-style: none;
+	text-decoration: none;
 }

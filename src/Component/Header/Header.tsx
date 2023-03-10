@@ -5,7 +5,11 @@ import "./Header.css";
 function Header() {
 	return (
 		<header>
-			<h3>Exchange Rate Date Picker</h3>
+			<h3>
+				<a href="/">
+				Exchange Rate Date Picker
+				</a>
+			</h3>
 			
           
 			<button

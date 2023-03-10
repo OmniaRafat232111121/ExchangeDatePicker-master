@@ -2,13 +2,18 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 100px;
+	width:100%;
+	max-width: 100%;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
 }
 
-
+header h3 a{
+	color:var(--textColor);
+	font-size: 1.2rem;
+}
 
 header .nav-btn {
 	padding: 5px;
@@ -31,7 +36,9 @@ header .nav-btn {
 	}
 	
 
-	nav a {
+	h3 a {
 		font-size: 1.5rem;
+		color:var(--textColor);
+		font-size: 0.8rem;
 	}
 }

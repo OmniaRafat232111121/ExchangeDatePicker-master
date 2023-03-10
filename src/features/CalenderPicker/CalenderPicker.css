@@ -28,17 +28,16 @@
     box-shadow:var(--dark-shadow);
     z-index: 1;
 }
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
     .calender_picker {
         padding:30px;
     }
     
-    .react-calendar {
-        width: 254px;
-        max-width: 100%;
-        background: white;
-        border: 1px solid #a0a096;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.125em;
+
+        .calendar {
+            width: 200px;
+            max-width: 100%;
+          background-color: aquamarine;
+        
     }
 }

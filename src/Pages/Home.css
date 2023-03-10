@@ -1,0 +1,31 @@
+
+.app {
+    min-height: 100vh;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .react-calendar {
+        width: 266px;
+        max-width: 100%;
+        background-color: white;
+        border: 1px solid #a0a096;
+       
+        line-height: 1.125em;
+        text-align: center;
+       
+    }
+    .calendar__range {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width:90%;
+        margin-top: 30px;
+        padding:20px;
+        border-radius: 50px;
+       
+        background-color: rgb(118, 47, 118);
+    }
+
+
+}
+

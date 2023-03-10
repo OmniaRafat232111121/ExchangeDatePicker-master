@@ -3,7 +3,7 @@ import RangeCalender from '../features/RangeCalender/RangeCalender';
 import Header from '../Component/Header/Header';
 import axios from 'axios';
 import CurrencyTable from '../features/Currency/Currency';
-
+import './Home.css'
 import { toast } from 'react-toastify';
 
 const Home = () => {
