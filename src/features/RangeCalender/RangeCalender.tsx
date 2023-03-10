@@ -33,23 +33,28 @@ const RangeCalender: FC<CalendarRangeProps> = ({setDate}: CalendarRangeProps) =>
   };
 
   return (
-    <div className='calendar__range '>
-      
-      <CalendarPicker
-        id='start'
-        title='Start'
-        active={activeCalendar}
-        setActive={setActiveCalendar}
-        getDate={getStartDate}
-      />
-      <CalendarPicker
-        id='end'
-        title='End'
-        active={activeCalendar}
-        setActive={setActiveCalendar}
-        getDate={getEndDate}
-      />
+    <div className='calender-picker'>
+  <div className='calendar__range '>
+       
+       <CalendarPicker
+         id='start'
+         title='StartDate'
+         active={activeCalendar}
+         setActive={setActiveCalendar}
+         getDate={getStartDate}
+       />
+     
+ 
+       <CalendarPicker
+         id='end'
+         title='EndDate'
+         active={activeCalendar}
+         setActive={setActiveCalendar}
+         getDate={getEndDate}
+       />
+     </div>
     </div>
+  
   );
 };
 

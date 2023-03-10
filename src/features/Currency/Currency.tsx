@@ -44,6 +44,7 @@ const CurrencyTable: FC<CurrencyTableProps> = ({
         </p>
 
         {/* Range of start-end Day */}
+        
         <div className='currency_range'>
        
          <p className='currency__page--date-range-start'>

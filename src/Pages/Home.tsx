@@ -66,7 +66,8 @@ const Home = () => {
         ):
         
         (
-         <RangeCalender  setDate={setDate}/>
+         <RangeCalender  setDate={setDate} />
+
         )
             
         }

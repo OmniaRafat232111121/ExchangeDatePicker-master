@@ -1,8 +1,7 @@
 .calender{
     border-radius: 20px;
-    padding:20px;
+    padding:30px;
     color: purple;
-    
     
 }
 .calender_picker {
@@ -12,19 +11,19 @@
 .calender_picker:last-child {
     margin-left: 2px;
 }
-.calender_picker_title {
-    width: 100%;
-    height: 5rem;
-    font-size: 2rem;
-    line-height: 4.5rem;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    background: var(--tertiary-color);
-    box-shadow: var(--dark-shadow);
+.calender-title {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   font-size: 20px;
+   font-weight:bold;
+   color:#fff;
+   line-height: 2rem;
 }
-.calender_picker:hover {
-    transform: translateY(-8px) scale(1.1) ;
-    box-shadow: var(--dark-shadow);
+.calender-title .active{
+    color:green;
+}
+.calender:hover {
+    transform: translateY(5px) scale(1.1) ;
+    box-shadow:var(--dark-shadow);
     z-index: 1;
 }

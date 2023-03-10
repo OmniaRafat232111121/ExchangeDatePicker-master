@@ -6,7 +6,7 @@
     padding:30px;
     border-radius: 50px;
     background: none;
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1s;
     background-color: rgb(218, 200, 218);
 }
 @keyframes fadeIn {
