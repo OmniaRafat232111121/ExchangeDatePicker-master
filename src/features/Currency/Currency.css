@@ -23,15 +23,7 @@
 
 }
 
-.currency__page--date-today {
-    border-bottom: solid 1px rgb(0, 0, 0);
-    font-size: 1.7rem;
-}
-.currency__page--date-today .today {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
+
 .currency_range {
     margin-top: 1rem;
     width: 50%;
@@ -64,7 +56,7 @@
 }
 
 .currency__page--table th {
-    font-size: 1rem;
+    font-size: 1.5rem;
    color:#fff;
    width:35%;
     border-top-left-radius: 5px;
@@ -112,10 +104,40 @@
 }
 @media screen and (max-width: 600px) {
     .currency__page--restart-btn {
-        font-size: 4rem;
-        width: 5rem;
-        height: 5rem;
-        right: 1rem;
-        top: 8rem;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        right: 0.1rem;
+        top: 15rem;
    }
+   .currency_range{
+    width:70%;
+    padding:5px;
+   }
+   .currency__page--table th {
+    font-size: 0.7rem;
+
+   }
+}
+
+.currency__page--date-today {
+    border-bottom: solid 1px rgb(0, 0, 0);
+    font-size: 1.7rem;
+}
+.currency__page--date-today .today {
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .currency__page--date-today {
+        font-size: 1rem;
+        
+    }
+    .currency__page--date-today .today {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
 }

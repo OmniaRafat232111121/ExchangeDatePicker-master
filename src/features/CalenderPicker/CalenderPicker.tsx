@@ -1,5 +1,5 @@
 import React,{ useState} from 'react'
-import { FC} from 'react';
+import { FC } from 'react';
 //styles
 import './CalenderPicker.css';
 import '../Calender/Calender.css'
