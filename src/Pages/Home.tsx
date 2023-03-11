@@ -28,7 +28,7 @@ const Home = () => {
   const getCurrencyRate = async () => {
     const { startDate, endDate } = date;
       setLoading(true);
-    // CHECK IF BOTH ARE SELCETED
+    // check if is selected
     if (startDate && endDate) {
       //Check Range with start and end
       if (startDate < endDate) {
@@ -40,7 +40,7 @@ const Home = () => {
         setData(res.data);
         // setLoading(false);
 
-        // !SHOW ALERT IF THE DATE RANGE IS NOT VALID
+        // show error to response is not vaild
       } else if (startDate > endDate) {
         setDate({ startDate: '', endDate: '' });
         toast.error('This is Range is not found')

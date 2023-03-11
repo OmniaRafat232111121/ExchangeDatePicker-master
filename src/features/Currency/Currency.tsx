@@ -14,6 +14,7 @@ const CurrencyTable: FC<CurrencyTableProps> = ({
   setData,
   setDate,
 }: CurrencyTableProps) => {
+  //response from APi
   const handleRestart = () => {
     setData({
       motd: {
