@@ -2,8 +2,8 @@ import { FC } from 'react';
 import { MdRestartAlt } from 'react-icons/md';
 import moment from 'moment';
 import './Currency.css'
-
-interface CurrencyTableProps{
+//type props can be any
+type CurrencyTableProps={
     data: any;
   setData: any;
   setDate: (date: any) => void;

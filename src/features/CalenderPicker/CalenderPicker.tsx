@@ -7,14 +7,15 @@ import '../Calender/Calender.css'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
-interface calenderPicker {
+type calenderPicker ={
     id: string;
     title: string;
     getDate: (date: Date) => void;
     active: string;
     setActive: (active: string) => void;
 }
-const CalendarPicker: FC<calenderPicker> = ({
+const CalendarPicker: FC<calenderPicker> = (
+  {
   id,
   title,
   getDate,

@@ -3,7 +3,7 @@ import moment from 'moment';
 import CalendarPicker from '../CalenderPicker/CalenderPicker'
 
 import './RangeCalender.css'
-
+//type can be any
  type CalendarRangeProps = {
     setDate: (date: any) => void;
   };
